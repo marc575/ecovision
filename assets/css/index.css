@@ -17,15 +17,6 @@ header {
     margin: auto;
 }
 
-.container {
-    width: 90%;
-    margin: auto;
-}
-
-.bg-light {
-    background-color: var(--light-color);
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     padding: var(--padding-heading);
@@ -69,6 +60,47 @@ p, li {
     margin: 0;
 }
 
+footer {
+    background-color: var(--darkblue-color);
+    color: var(--white-color);
+}
+
+footer p, footer a {
+    color: var(--white-color);
+}
+
+a {
+    color: var(--gray-color);
+    font-size: var(--size-link);
+    text-transform: capitalize;
+    text-decoration: none;
+
+    &:hover, &:active, &:focus {
+        color: var(--orange-color);
+    }
+}
+
+input, textarea {
+    border: 1px solid var(--light-color);
+    background-color: var(--white-color);
+    padding: var(--padding-input);
+    border-radius: 5px;
+
+    &::placeholder {
+        color: var(--gray-color);
+        font-size: var(--size-text);
+    }
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.bg-light {
+    background-color: var(--light-color);
+}
+
 .nav {
     display: flex;
     flex-direction: row;
@@ -76,14 +108,14 @@ p, li {
     align-items: center;
 }
 
-.navbar {
+.nav .navbar {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 3rem;
 }
 
-.navbar-title {
+.nav .navbar .navbar-title {
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -91,12 +123,15 @@ p, li {
     gap: 0.3rem;
 }
 
-.navbar-search {
-    display: inline-block;
-    position: relative;
+.nav .navbar .navbar-title .nav-logo {
+    width: 3rem;
 }
 
-.navbar-link {
+.nav .navbar .navbar-title .nav-title {
+    font-size: var(--size-heading-2);
+}
+
+.nav .navbar .navbar-link {
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -104,30 +139,33 @@ p, li {
     align-items: center;
 }
 
-.nav-logo {
-    width: 3rem;
+.nav .navbar .navbar-link .nav-link {
+    color: var(--gray-color);
+    font-size: var(--size-link);
+    text-transform: capitalize;
+    text-decoration: none;
+
+    &:hover, &:active, &:focus {
+        color: var(--orange-color);
+    }
 }
 
-.nav-icon {
-    width: 1.2rem;
+.nav .navbar .navbar-link .link-active {
+    color: var(--orange-color);
 }
 
-.nav-search-icon {
+.nav .navbar .navbar-search {
+    display: inline-block;
+    position: relative;
+}
+
+.nav .navbar .navbar-search .nav-search-icon {
     position: absolute;
     top: 50%;
-    right: 5%;
+    right: 4%;
     transform: translateY(-50%);
     width: 0.8rem;
-    color: #888;
     pointer-events: none;
-}
-
-.nav-link {
-    color: var(--gray-color);
-}
-
-.nav-title {
-    font-size: var(--size-heading-3);
 }
 
 .nav-action {
@@ -138,13 +176,8 @@ p, li {
     gap: 1rem;
 }
 
-footer {
-    background-color: var(--darkblue-color);
-    color: var(--white-color);
-}
-
-footer p, footer a {
-    color: var(--white-color);
+.nav-action .nav-icon {
+    width: 1.2rem;
 }
 
 .footer-action {
@@ -162,11 +195,7 @@ footer p, footer a {
     gap: 1.5rem;
 }
 
-.footer-newsletter {
-    padding: var(--padding-newsletter);
-}
-
-.social-link {
+.footer-menu .social-link {
     padding: var(--padding-text);
     display: flex;
     flex-direction: row;
@@ -175,27 +204,24 @@ footer p, footer a {
     gap: 1rem;
 }
 
-.social-link img {
+.footer-menu .social-link img {
     background-color: var(--white-color);
     padding: 10px;
     border-radius: 100%;
 }
 
-.footer-menu-link-list {
+.footer-menu .footer-menu-link-list {
     list-style-type: none;
     padding-left: 0;
 }
 
-.footer-link {
-    color: var(--white-color);
-}
-
 .footer-newsletter {
+    padding: var(--padding-newsletter);
     display: inline-block;
     position: relative;
 }
 
-.footer-newsletter-icon {
+.footer-newsletter .footer-newsletter-icon {
     position: absolute;
     top: 50%;
     right: 5%;
@@ -209,14 +235,6 @@ footer p, footer a {
 
 .footer-copyright {
     text-align: center;
-}
-
-.link-icon {
-    width: 1rem;
-
-    &:hover {
-        color: var(--orange-color);
-    }
 }
 
 .btn {
@@ -251,31 +269,16 @@ footer p, footer a {
     }
 }
 
-a {
-    color: var(--gray-color);
-    font-size: var(--size-link);
-    text-transform: capitalize;
-    text-decoration: none;
+.link-icon {
+    width: 1rem;
 
-    &:hover, &:active, &:focus {
+    &:hover {
         color: var(--orange-color);
     }
 }
 
 .link-active {
     color: var(--orange-color);
-}
-
-input, textarea {
-    border: 1px solid var(--light-color);
-    background-color: var(--white-color);
-    padding: var(--padding-input);
-    border-radius: 5px;
-
-    &::placeholder {
-        color: var(--gray-color);
-        font-size: var(--size-text);
-    }
 }
 
 .input-rounded {
