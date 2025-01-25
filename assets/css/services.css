@@ -1,1 +1,50 @@
 @import url('variables.css');
+
+.hero-services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.hero-services .hero-services-img {
+    max-width: 40%;
+    border-radius: 10px;
+}
+
+.hero-services .hero-services-content .hero-services-content-img {
+    border-radius: 10px;
+}
+
+.hero-services .hero-services-content .hero-services-content-img:first-child {
+    max-width: 50%;
+}
+
+.hero-services .hero-services-content .hero-services-content-img:last-child {
+    max-width: 35%;
+}
+
+.hero-services .hero-services-content p {
+    margin: 2rem 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+    max-width: 90%;
+    margin: 2rem auto;
+}
+
+.services-grid .services-grid-item img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.services-grid .services-grid-item p, .services-grid .services-grid-item h6 {
+    text-align: start;
+    margin: 0 2rem;
+}

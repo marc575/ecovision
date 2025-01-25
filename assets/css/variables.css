@@ -8,35 +8,37 @@
     --orange-color:  #fb5607;
     --white-color:  #ffffff;
     --black-color:  #000000;
-    --gray-color: #808080;
-    --light-color: #f5f5dc;
+    --gray-color: #aaa;
+    --grey-color: #e2e2e2;
+    --light-color: #f9f9f9;
 
     --font-heading: 'Poppins', sans-serif;
     --font-text: sans-serif, 'Open Sans';
 
-    --size-heading-1: 2.5rem;
-    --size-heading-2: 2rem;
+    --size-heading-1: 2rem;
+    --size-heading-2: 1.8rem;
     --size-heading-3: 1.6rem;
-    --size-heading-4: 1.3rem;
-    --size-heading-5: 1.1rem;
+    --size-heading-4: 1.4rem;
+    --size-heading-5: 1.2rem;
+    --size-heading-6: 1.1rem;
     --size-button: 1rem;
-    --size-link: 0.95rem;
+    --size-link: 1rem;
     --size-text: 0.9rem;
 
-    --padding-section: 3rem 0;
+    --padding-section: 5rem 0;
     --padding-header: 1rem 0;
     --padding-newsletter: 1rem 0;
     --padding-heading: 0.3rem 0;
-    --padding-text: 0.5rem 0;
-    --padding-input: 0.6rem 1.2rem;
-    --padding-button: 0.6rem 1.8rem;
-    --padding-card-body: 1rem;
+    --padding-text: 0.6rem 0;
+    --padding-input: 0.8rem 1.2rem;
+    --padding-button: 0.8rem 1.8rem;
+    --padding-card-body: 1.5rem;
     --padding-card-blog-body: 1rem 0;
     --padding-card-header: 0rem;
     --padding-card-blog-header: 0rem;
 
     --border-radius-button: 30px;
     --border-radius-card: 10px;
-    --border-radius-card-header: 10px 0;
+    --border-radius-card-header: 10px 10px 0 0;
     --border-radius-card-blog-header: 10px;
 }

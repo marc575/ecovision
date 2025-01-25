@@ -1,1 +1,22 @@
 @import url('variables.css');
+
+.about img {
+    max-width: 50%;
+}
+
+.about .about-content a {
+    margin-top: 2rem;
+}
+
+.team {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;    
+}
+
+.team .card {
+    background-color: var(--light-color);
+}

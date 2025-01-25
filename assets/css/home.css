@@ -1,1 +1,84 @@
 @import url('variables.css');
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .hero-img {
+    max-width: 50%;
+}
+
+.hero .hero-action {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.services .services-item {
+    background-color: var(--white-color);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.properties {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;    
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats .stats-item h2 {
+    font-size: var(--size-heading-1);
+}
+
+.faqs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.faqs img {
+    max-width: 50%;
+}
+
+.reviews .reviews-items img {
+    max-width: 5rem;
+    border-radius: 100%;
+}
+
+.reviews .reviews-items p {
+    max-width: 50%;
+    margin: auto;
+}
+
+.reviews .reviews-items h6 {
+    margin-top: 1rem;
+}
+
+.reviews .reviews-items h3 {
+    margin-bottom: 1rem;
+}

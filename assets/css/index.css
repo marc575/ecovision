@@ -8,7 +8,7 @@ body {
 
 section {
     padding: var(--padding-section);
-    border-bottom: 1px solid var(--gray-color);
+    border-bottom: 1px solid var(--grey-color);
 }
 
 header {
@@ -51,6 +51,12 @@ h5 {
     text-transform: uppercase;
     font-weight: 600;
     color: var(--skyblue-color);
+}
+
+h6 {
+    font-size: var(--size-heading-6);
+    text-transform: capitalize;
+    font-weight: 600;
 }
 
 p, li {
@@ -99,6 +105,10 @@ input, textarea {
 
 .bg-light {
     background-color: var(--light-color);
+}
+
+.text-center {
+    text-align: center;
 }
 
 .nav {
@@ -286,7 +296,6 @@ input, textarea {
 }
 
 .card {
-    border: 1px solid var(--white-color);
     border-radius: var(--border-radius-card);
     background-color: var(--white-color);
 }
@@ -294,13 +303,15 @@ input, textarea {
 .card .card-header {
     border-radius: var(--border-radius-card-header);
     padding: var(--padding-card-header);
-    background-size: contain;
+    max-width: 100%;
+    object-fit: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 .card .card-body {
     padding: var(--padding-card-body);
+    text-align: start;
 }
 
 .card .card-body .card-title {
@@ -313,7 +324,7 @@ input, textarea {
 
 .card .card-body .card-price {
     font-size: var(--size-text);
-    padding: var(--padding-text);
+    padding: var(--padding-heading);
     font-weight: 700;
     color: var(--skyblue-color);
 }
@@ -366,10 +377,53 @@ input, textarea {
     padding: var(--padding-text);
 }
 
+.choose {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.choose .choose-item {
+    background-color: var(--white-color);
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    text-align: start;
+    border-radius: 10px;
+}
+
+.choose .choose-item img {
+    max-width: 33%;
+}
+
+.explore {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.explore .explore-img {
+    max-width: 50%;
+}
+
+.explore .explore-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
 .row {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 3rem;
     justify-content: start;
     align-items: center;
 }
@@ -377,7 +431,7 @@ input, textarea {
 .row-reverse {
     display: flex;
     flex-direction: row-reverse;
-    gap: 1rem;
+    gap: 3rem;
     justify-content: start;
     align-items: center;
 }
