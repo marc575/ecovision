@@ -59,8 +59,58 @@
         </nav>
     </header>
 
-    <main></main>
-
+    <main>
+        <section class="bg-light">
+            <div class="container text-center">
+                <h5>contact us</h5>
+                <h1>Send a message</h1>
+                <div class="contact">
+                    <div class="column">
+                        <div class="contact-info">
+                            <img src="../assets/img/map.png" alt="map">
+                            <div>
+                                <h6>Visit us</h6>
+                                <p>Estates Housing Company, 343 marketing, #2214 cravel street, NY - 62617</p>
+                            </div>
+                        </div>
+                        <div class="contact-info">
+                            <img src="../assets/img/phone.png" alt="phone">
+                            <div>
+                                <h6>Call us</h6>
+                                <p><a href="tel:+(21) 234 557 4567">+(21) 234 557 4567</a></p>
+                                <p><a href="tel:+(21) 234 557 4568">+(21) 234 557 4568</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-info">
+                            <img src="../assets/img/email.png" alt="email">
+                            <div>
+                                <h6>Email us</h6>
+                                <p><a href="mailto:support@mail.com">support@mail.com</a></p>
+                                <p><a href="mailto:contact@mail.com">contact@mail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="" method="post" class="form-contact">
+                        <input type="text" name="name" id="name" placeholder="Your Name*">
+                        <input type="email" name="email-contact" id="email-contact" placeholder="Your Email*">
+                        <input type="text" name="subject" id="subject" placeholder="Your Subject*">
+                        <input type="url" name="website" id="website" placeholder="Website URL*">
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Type your message here*"></textarea>
+                        <input type="submit" value="Send Message" class="btn btn-primary">
+                    </form>
+                </div>
+            </div>
+            <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.427382839381!2d9.700256!3d4.0492569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10610d6b10c3e09b%3A0x3f63c7ab9b362c63!2sAkwa%2C%20Douala%2C%20Cameroun!5e0!3m2!1sfr!2sfr!4v1699876543210!5m2!1sfr!2sfr"
+                  width="100%"
+                  height="400"
+                  allowFullScreen=""
+                  title='Map'
+                ></iframe>
+              </div>
+        </section>
+    </main>
     <footer>
         <section>
             <div class="container footer-action">
@@ -88,7 +138,8 @@
                     </div>
                 </div>
                 <div>
-                    <h4>Popular Searches</h4>
+                    <h4>Popular <br>
+                        Searches</h4>
                     <ul class="footer-menu-link-list">
                         <li><a href="">Features</a></li>
                         <li><a href="">offices for rent</a></li>
@@ -108,8 +159,10 @@
                     </ul>
                 </div>
                 <div>
-                    <h4>Subscribe to your newsletter</h4>
-                    <p>Enter your email and receive the lastest news from us.</p>
+                    <h4>Subscribe to your <br>
+                        newsletter</h4>
+                    <p>Enter your email and receive the lastest  <br>
+                        news from us.</p>
                     <form action="" class="footer-newsletter">
                         <input type="email" name="email" id="email" placeholder="Your Email Address">
                         <a href="" class="footer-newsletter-icon"><img src="../assets/icons/send.svg" alt="send" class="link-icon"></a>
@@ -117,11 +170,9 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="container footer-copyright">
-                <p>&copy; 2025 Estates. All rights reserved | Designed by <a href="" class="link-active">Digital Pro Solutions.</a></p>
-            </div>
-        </section>
+        <div class="container footer-copyright">
+            <p>&copy; 2025 Estates. All rights reserved | Designed by <a href="" class="link-active">Digital Pro Solutions.</a></p>
+        </div>
     </footer>
 </body>
 </html>
