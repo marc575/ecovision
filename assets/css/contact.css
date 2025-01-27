@@ -29,7 +29,6 @@
 .form-contact input[type="submit"] {
     width: 50%;
     margin-left: 50%;
-    justify-content: end;
 }
 
 .map {
