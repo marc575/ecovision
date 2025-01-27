@@ -13,7 +13,7 @@ section {
 
 header {
     padding: var(--padding-header);
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
@@ -116,6 +116,7 @@ input, textarea {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
 }
 
 .nav .navbar {
@@ -130,7 +131,7 @@ input, textarea {
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    gap: 0.3rem;
+    gap: 0.5rem;
 }
 
 .nav .navbar .navbar-title .nav-logo {
@@ -195,14 +196,15 @@ input, textarea {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
 }
 
 .footer-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 2rem;
     align-items: start;
-    gap: 1.5rem;
 }
 
 .footer-menu .social-link {
@@ -245,6 +247,7 @@ input, textarea {
 
 .footer-copyright {
     text-align: center;
+    padding: 1rem 0 2rem 0;
 }
 
 .btn {
@@ -348,7 +351,8 @@ input, textarea {
 .card-blog .card-blog-header {
     border-radius: var(--border-radius-card-blog-header);
     padding: var(--padding-card-blog-header);
-    background-size: contain;
+    max-width: 100%;
+    object-fit: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -359,7 +363,7 @@ input, textarea {
 
 .card-blog .card-blog-body .card-blog-date {
     font-size: var(--size-text);
-    padding: var(--padding-text);
+    padding: var(--padding-heading);
     font-weight: 700;
     color: var(--green-color);
 }
@@ -392,21 +396,21 @@ input, textarea {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     text-align: start;
     border-radius: 10px;
 }
 
 .choose .choose-item img {
-    max-width: 33%;
+    max-width: calc(100% / 3);
 }
 
 .explore {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 3rem;
     align-items: center;
-    gap: 5rem;
 }
 
 .explore .explore-img {
@@ -450,4 +454,16 @@ input, textarea {
     gap: 1rem;
     justify-content: center;
     align-items: start;
+}
+
+.text-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pagination {
+    margin: 1rem 0 0 0;
 }

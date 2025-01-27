@@ -13,10 +13,32 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    gap: 2rem;    
+    gap: 2rem;
+    align-items: center;  
 }
 
 .team .card {
     background-color: var(--light-color);
+    position: relative;
+}
+
+.team .card .card-body .social-icons {
+    position: absolute;
+    top: 65%;
+    right: 5%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+}
+
+.team .card .card-body .social-icons img:nth-child(1) {
+    background-color: var(--darkblue-color);
+    padding: 5px;
+    border-radius: 100%;
+}
+
+.team .card .card-body .social-icons img:nth-child(2) {
+    background-color: var(--skyblue-color);
+    padding: 5px;
+    border-radius: 100%;
 }
