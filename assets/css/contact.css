@@ -7,6 +7,12 @@
     align-items: start;
     gap: 2rem;
     margin-top: 5rem;
+
+    @media (max-width: 759px) {
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: center;
+    }
 }
 
 .contact .contact-info {
@@ -24,6 +30,10 @@
     justify-content: start;
     gap: 1rem;
     width: 50%;
+
+    @media (max-width: 759px) {
+        width: 100%;
+    }
 }
 
 .form-contact input[type="submit"] {
@@ -33,6 +43,10 @@
 
 .map {
     padding: var(--padding-section);
+
+    @media (max-width: 759px) {
+        padding: 2rem 0;
+    }
 }
 
 .map iframe {

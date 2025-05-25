@@ -7,11 +7,22 @@
     gap: 2rem;
     align-items: center;
     margin-top: 2rem;
+
+    @media (max-width: 759px) {
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: start;
+    }
 }
 
 .hero-services .hero-services-img {
     max-width: 40%;
     border-radius: 10px;
+
+    @media (max-width: 759px) {
+        max-width: 100%;
+    }
 }
 
 .hero-services .hero-services-content .hero-services-content-img {
@@ -20,10 +31,18 @@
 
 .hero-services .hero-services-content .hero-services-content-img:first-child {
     max-width: 50%;
+
+    @media (max-width: 759px) {
+        max-width: 80%;
+    }
 }
 
 .hero-services .hero-services-content .hero-services-content-img:last-child {
     max-width: 35%;
+
+    @media (max-width: 759px) {
+        display: none;
+    }
 }
 
 .hero-services .hero-services-content p {
@@ -32,7 +51,7 @@
 
 .services-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
     max-width: 90%;

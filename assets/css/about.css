@@ -2,6 +2,10 @@
 
 .about img {
     max-width: 50%;
+
+    @media (max-width: 759px) {
+        max-width: 100%;
+    }
 }
 
 .about .about-content a {
@@ -14,7 +18,14 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 2rem;
-    align-items: center;  
+    align-items: center; 
+    
+    @media (max-width: 759px) {
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: start;
+    }
 }
 
 .team .card {
