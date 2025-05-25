@@ -532,3 +532,38 @@ input, textarea {
 .pagination {
     margin: 1rem 0 0 0;
 }
+
+.cta-section {
+    position: relative;
+    z-index: 100;
+}
+
+.cta-section .cta-link {  
+    position: fixed;
+    bottom: 4%;
+    right: 5%;
+} 
+
+.cta-section .cta-link:hover {
+    img {
+        transform: scale(1.2);
+    }
+}
+
+.cta-section .cta-link img {
+    width: 40px;
+    transition: transform ease-out .2s;
+    animation: moveButton 2s infinite;
+}
+  
+@keyframes moveButton {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
